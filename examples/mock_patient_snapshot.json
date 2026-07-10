@@ -1,0 +1,219 @@
+{
+  "schema_version": "0.1",
+  "case_id": "SYNTHETIC_DEMO_CASE_001_FAKE",
+  "source": {
+    "dataset": "SYNTHETIC MOCK ONLY - NOT MIMIC-IV",
+    "repo": "SafeProbeMD example fixture",
+    "extraction_timestamp": "2026-07-09T00:00:00Z",
+    "extraction_unit": "hadm_id",
+    "synthetic": true,
+    "warning": "This file contains fabricated demo data only. It is not derived from MIMIC-IV or any patient record."
+  },
+  "ids": {
+    "patient_id": "FAKE_PATIENT_001",
+    "admission_id": "FAKE_ADMISSION_001",
+    "selected_stay_id": "FAKE_STAY_001"
+  },
+  "demographics": {
+    "age": 68,
+    "gender": "F",
+    "race": "SYNTHETIC_RACE_CATEGORY",
+    "language": "ENGLISH",
+    "insurance": "SYNTHETIC_INSURANCE",
+    "marital_status": "SYNTHETIC_STATUS",
+    "weight_kg": 74.5
+  },
+  "admission": {
+    "admit_time": "2201-03-14 08:15:00",
+    "discharge_time": "2201-03-18 13:30:00",
+    "admission_type": "SYNTHETIC EMERGENCY",
+    "admission_location": "SYNTHETIC EMERGENCY DEPARTMENT",
+    "discharge_location": "SYNTHETIC HOME WITH SERVICES",
+    "hospital_expire_flag": 0,
+    "los_days": 4.22
+  },
+  "diagnoses": [
+    {
+      "icd_code": "FAKEJ189",
+      "icd_version": "10",
+      "seq_num": 1,
+      "description": "Synthetic community acquired pneumonia"
+    },
+    {
+      "icd_code": "FAKEN179",
+      "icd_version": "10",
+      "seq_num": 2,
+      "description": "Synthetic acute kidney injury"
+    },
+    {
+      "icd_code": "FAKEI509",
+      "icd_version": "10",
+      "seq_num": 3,
+      "description": "Synthetic chronic heart failure history"
+    }
+  ],
+  "procedures": [
+    {
+      "icd_code": "FAKE5A09357",
+      "icd_version": "10",
+      "seq_num": 1,
+      "description": "Synthetic noninvasive respiratory support"
+    }
+  ],
+  "labs": [
+    {
+      "itemid": "FAKE50912",
+      "label": "Creatinine",
+      "category": "Chemistry",
+      "charttime": "2201-03-14 10:00:00",
+      "valuenum": 2.4,
+      "value": "2.4",
+      "valueuom": "mg/dL",
+      "ref_range_lower": 0.6,
+      "ref_range_upper": 1.2,
+      "flag": "abnormal",
+      "selection_reason": "renal_safety"
+    },
+    {
+      "itemid": "FAKE51006",
+      "label": "Urea Nitrogen",
+      "category": "Chemistry",
+      "charttime": "2201-03-14 10:00:00",
+      "valuenum": 38.0,
+      "value": "38",
+      "valueuom": "mg/dL",
+      "ref_range_lower": 6.0,
+      "ref_range_upper": 20.0,
+      "flag": "abnormal",
+      "selection_reason": "renal_safety"
+    },
+    {
+      "itemid": "FAKE51301",
+      "label": "WBC",
+      "category": "Hematology",
+      "charttime": "2201-03-14 10:15:00",
+      "valuenum": 16.2,
+      "value": "16.2",
+      "valueuom": "K/uL",
+      "ref_range_lower": 4.0,
+      "ref_range_upper": 11.0,
+      "flag": "abnormal",
+      "selection_reason": "first_24h"
+    },
+    {
+      "itemid": "FAKE50813",
+      "label": "Lactate",
+      "category": "Blood Gas",
+      "charttime": "2201-03-14 11:20:00",
+      "valuenum": 3.1,
+      "value": "3.1",
+      "valueuom": "mmol/L",
+      "ref_range_lower": 0.5,
+      "ref_range_upper": 2.0,
+      "flag": "critical",
+      "selection_reason": "critical"
+    },
+    {
+      "itemid": "FAKE51265",
+      "label": "Platelet Count",
+      "category": "Hematology",
+      "charttime": "2201-03-15 06:00:00",
+      "valuenum": 128.0,
+      "value": "128",
+      "valueuom": "K/uL",
+      "ref_range_lower": 150.0,
+      "ref_range_upper": 400.0,
+      "flag": "abnormal",
+      "selection_reason": "abnormal"
+    }
+  ],
+  "medications": [
+    {
+      "drug": "Vancomycin",
+      "dose_val_rx": "",
+      "dose_unit_rx": "",
+      "route": "IV",
+      "frequency": "per pharmacy protocol",
+      "starttime": "2201-03-14 12:00:00",
+      "stoptime": "2201-03-16 09:00:00",
+      "pharmacy_id": "FAKE_PHARM_001"
+    },
+    {
+      "drug": "Ceftriaxone",
+      "dose_val_rx": "1",
+      "dose_unit_rx": "g",
+      "route": "IV",
+      "frequency": "daily",
+      "starttime": "2201-03-14 12:15:00",
+      "stoptime": "2201-03-17 10:00:00",
+      "pharmacy_id": "FAKE_PHARM_002"
+    },
+    {
+      "drug": "Furosemide",
+      "dose_val_rx": "20",
+      "dose_unit_rx": "mg",
+      "route": "IV",
+      "frequency": "once",
+      "starttime": "2201-03-15 08:00:00",
+      "stoptime": "2201-03-15 08:15:00",
+      "pharmacy_id": "FAKE_PHARM_003"
+    }
+  ],
+  "icu_summary": {
+    "has_icu": true,
+    "selected_stay_id": "FAKE_STAY_001",
+    "selection_rule": "highest_acuity",
+    "n_icu_stays": 1,
+    "first_careunit": "Synthetic Medical ICU",
+    "last_careunit": "Synthetic Medical ICU",
+    "intime": "2201-03-14 13:05:00",
+    "outtime": "2201-03-16 20:15:00",
+    "los_days": 2.3
+  },
+  "clinical_note": {
+    "note_id": "SYNTHETIC_NOTE_001",
+    "note_type": "discharge",
+    "raw_text_available": true,
+    "sections": {
+      "chief_complaint": "Synthetic note: fever, cough, and shortness of breath.",
+      "history_of_present_illness": "Synthetic note: fabricated patient presented with several days of respiratory symptoms and reduced oral intake.",
+      "past_medical_history": "Synthetic note: heart failure and chronic hypertension are included for demo routing only.",
+      "hospital_course": "Synthetic note: treated for pneumonia with monitored respiratory support and antibiotics. Renal function was followed because creatinine was elevated.",
+      "discharge_diagnosis": "Synthetic note: community acquired pneumonia with acute kidney injury.",
+      "discharge_medications": "Synthetic note: oral antibiotic course and home medications were reconciled.",
+      "follow_up": "Synthetic note: follow up with primary care and repeat kidney function testing."
+    },
+    "section_parse_quality": "high",
+    "text_truncated": false
+  },
+  "derived_risk_scores": {
+    "has_icu_scores": true,
+    "sofa_max": 8,
+    "sofa_components": {
+      "respiration": 2,
+      "coagulation": 1,
+      "liver": 0,
+      "cardiovascular": 2,
+      "cns": 1,
+      "renal": 2
+    },
+    "sapsii": 42,
+    "sapsii_prob": 0.22,
+    "apsiii": 55,
+    "apsiii_prob": 0.18
+  },
+  "data_quality": {
+    "missing_blocks": [],
+    "warnings": [
+      {
+        "type": "synthetic_demo_data",
+        "severity": "info",
+        "message": "This is fabricated demo data and must not be used for clinical evaluation."
+      }
+    ],
+    "extraction_notes": [
+      "Synthetic fixture created for GitHub-safe SafeProbeMD demo mode.",
+      "No MIMIC-IV, MIMIC-IV-Note, patient, or patient-derived content is present."
+    ]
+  }
+}

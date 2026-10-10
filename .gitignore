@@ -1,0 +1,36 @@
+# Patient-derived and local data
+*.duckdb
+*.db
+*.sqlite
+*.csv
+*.csv.gz
+*.parquet
+snapshots/
+outputs/
+data/
+~/data/
+hadm_ids.txt
+*_safeprobemd_output.json
+*_agent_inputs.json
+batch_summary.csv
+aggregate_metrics.json
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+*.swp

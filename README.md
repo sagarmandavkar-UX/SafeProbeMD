@@ -1,5 +1,7 @@
 # SafeProbeMD
 
+[![CI](https://github.com/sagarmandavkar-UX/SafeProbeMD/actions/workflows/ci.yml/badge.svg)](https://github.com/sagarmandavkar-UX/SafeProbeMD/actions/workflows/ci.yml)
+
 SafeProbeMD is a research prototype for safe, evidence-grounded multi-agent clinical reasoning over approved MIMIC-IV data. The repository contains code, tests, and documentation only; no patient data is included.
 
 SafeProbeMD converts one approved MIMIC-IV hospital admission into a structured Patient Snapshot JSON, routes bounded slices of that snapshot to specialized agents, verifies claims against source fields, applies a safety critic, and produces a final consensus output for human review.
